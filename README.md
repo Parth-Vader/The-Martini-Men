@@ -5,7 +5,7 @@
 
 Fast alerting and immediate response are important aspects for dealing effectively with disaster which can be achieved only through appropriate disaster management.
 
-Monitoring disasters using UAVs : Drones equipped with camera sensors which produce aerial photos of the affected area could help us recognize unsteady conditions using Deep Learning techniques. Images collected are sent to the server for remote processing. A trained Deep Learning model (VGG architecture) will be deployed on the server which would help in the prediction part.
+**Monitoring disasters using UAVs :** Drones equipped with camera sensors which produce aerial photos of the affected area could help us recognize unsteady conditions using Deep Learning techniques. Images collected are sent to the server for remote processing. A trained Deep Learning model (VGG architecture) will be deployed on the server which would help in the prediction part.
 
 For example, in case of a flood :
 In addition to spotting people in need of help, drones will be able to predict further flooding, and help provide estimates of how long certain areas would be underwater.
