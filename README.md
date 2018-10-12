@@ -26,4 +26,6 @@
 
     - We continue doing this in concurrence to sending independent aid signals(for government help) from layer 1 stations.
 
-3) **ETA with the help of redType** : 
+3) **ETA with the help of redType** : i.e. provide an estimate of when help will reach the victims based on the developed conditions of the surroundings.
+    - It would take into account the preparation time at each Aid station, mode of transport used and the distance (taking the most preferable route) from the affected area, given the circumstances.
+    - The estimate could also help the first responders know how much time they would take to reach the victims and speeden their actions accordingly
