@@ -6,7 +6,7 @@
 
     - **How it works** : We provide an offline group messaging platform, redType, to the people to communicate with first responders which helps the aiders assess the immediacy of the situation.
 
-
+    ![img1](https://raw.githubusercontent.com/Parth-Vader/The-Martini-Men/master/img1.jpg?token=APhACL7EQ-EcM8LJVt_vqnniSHU4m3kVks5byfxHwA%3D%3D)
 
     - **Installation** : To install the app, a user has to just tap the phone to that of another user and redType is sent from one user to another via Android Beam.
 
@@ -19,9 +19,7 @@
 2) **Aid Transfer Optimization**, i.e. deciding on Aid stations where there’s sufficient help available and from where sending support would be best.
 
     - **How it works** : Given a network of Aid stations, we keep a track of the quantity of emergency supplies available, focussing mainly on those which are closest to high importance zones(say layer 1). Next, we identify Aid stations closest to the layer 1 stations(say layer 2) and steer all their aids towards the nearest (optimal) layer 1 stations.
-
-
-
+    ![img2](https://raw.githubusercontent.com/Parth-Vader/The-Martini-Men/master/img2.jpg?token=APhACBdBFF8_koLLc7oBRampMkQO-u36ks5byfxLwA%3D%3D)
     - Priority will be given to Aid stations which have support available and are closest to the Layer 1 stations and/or affected areas
 
     - The steps involved in this process would be to first choose an affected area (say A) whose demands are to be met, then frame the objective function and constraint equations based on the availability of supplies in a nearby Aid station, its distance from area A, cost and time involved. After getting a solution to this problem with the help of the python pulp library, we update the demand/supply data  and move on to the next affected area.
