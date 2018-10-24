@@ -1,4 +1,7 @@
 from flask import Flask, render_template
+import os
+import random
+
 app = Flask(__name__,static_url_path='/static')
 
 @app.route("/")
@@ -42,6 +45,12 @@ def upgrade():
 @app.route('/user')
 def user():
     return render_template('user.html')
+
+def getrandomimg():
+    path = os.getcwd() + "/static/drone"
+    print(path)
+    random_filename = random.choice([x for x in os.listdir(path) if os.path.isfile(os.path.join(path, x))])
+    return random_filename
 
 if __name__ == "__main__":
     app.run()
