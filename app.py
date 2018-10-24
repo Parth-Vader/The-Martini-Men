@@ -14,37 +14,17 @@ def main():
 def dashboard():
     return render_template('dashboard.html')
 
-@app.route('/icons')
-def icons():
-    return render_template('icons.html')
-
 @app.route('/maps')
 def maps():
-    return render_template('maps.html')
-
-@app.route('/notifications')
-def notifications():
-    return render_template('notifications.html')
-
-@app.route('/table')
-def table():
-    return render_template('table.html')
-
-@app.route('/template')
-def template():
     return render_template('template.html')
 
-@app.route('/typography')
-def typography():
-    return render_template('typography.html')
+@app.route('/chat')
+def chat():
+    return render_template('template.html')
 
-@app.route('/upgrade')
-def upgrade():
-    return render_template('upgrade.html')
-
-@app.route('/user')
-def user():
-    return render_template('user.html')
+@app.route('/broadcast')
+def broadcast():
+    return render_template('template.html')
 
 def getrandomimg():
     path = os.getcwd() + "/static/drone"

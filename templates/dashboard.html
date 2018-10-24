@@ -58,45 +58,21 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url_for('user') }}">
-                        <i class="pe-7s-user"></i>
-                        <p>User Profile</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ url_for('table') }}">
-                        <i class="pe-7s-note2"></i>
-                        <p>Table List</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ url_for('typography') }}">
-                        <i class="pe-7s-news-paper"></i>
-                        <p>Typography</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ url_for('icons') }}">
-                        <i class="pe-7s-science"></i>
-                        <p>Icons</p>
-                    </a>
-                </li>
-                <li>
                     <a href="{{ url_for('maps') }}">
                         <i class="pe-7s-map-marker"></i>
                         <p>Maps</p>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url_for('notifications') }}">
-                        <i class="pe-7s-bell"></i>
-                        <p>Notifications</p>
+                    <a href="{{ url_for('chat') }}">
+                        <i class="pe-7s-note2"></i>
+                        <p>Chat</p>
                     </a>
                 </li>
-				<li class="active-pro">
-                    <a href="{{ url_for('upgrade') }}">
-                        <i class="pe-7s-rocket"></i>
-                        <p>Upgrade to PRO</p>
+                <li>
+                    <a href="{{ url_for('broadcast') }}">
+                        <i class="pe-7s-news-paper"></i>
+                        <p>Broadcast</p>
                     </a>
                 </li>
             </ul>
@@ -454,16 +430,6 @@
     	$(document).ready(function(){
 
         	demo.initChartist();
-
-        	$.notify({
-            	icon: 'pe-7s-gift',
-            	message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
-
-            },{
-                type: 'info',
-                timer: 4000
-            });
-
     	});
 	</script>
 
