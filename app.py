@@ -5,7 +5,6 @@ import random
 app = Flask(__name__,static_url_path='/static')
 
 @app.route("/")
-
 def main():
     return render_template('dashboard.html')
 
@@ -26,11 +25,28 @@ def chat():
 def broadcast():
     return render_template('template.html')
 
-def getrandomimg():
+def getdroneimg():
     path = os.getcwd() + "/static/drone"
-    print(path)
-    random_filename = random.choice([x for x in os.listdir(path) if os.path.isfile(os.path.join(path, x))])
-    return random_filename
+    name = str(random.randint(1,35)) + '.jpg'
+
+    return os.path.join(path,name)
+
+def gettweetimg():
+    path = os.getcwd() + "/static/twitter"
+    name = str(random.randint(1,33)) + '.jpg'
+
+    return os.path.join(path,name)
+
+def getlatlon():
+    lat1 = 20.5
+    lat2 = 22.5
+    lon1 = 82.5
+    lon2 = 87.5
+    lat = random.uniform(lat1,lat2)
+    lon = random.uniform(lon1,lon2)
+    
+    return [round(lat,1),round(lon,1)]
+
 
 if __name__ == "__main__":
     app.run()
