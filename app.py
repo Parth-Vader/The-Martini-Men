@@ -16,7 +16,7 @@ def dashboard():
 
 @app.route('/maps')
 def maps():
-    return render_template('template.html')
+    return render_template('maps.html')
 
 @app.route('/chat')
 def chat():
