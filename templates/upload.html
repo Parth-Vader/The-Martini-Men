@@ -10,7 +10,6 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
-
     <!-- Bootstrap core CSS     -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -106,20 +105,44 @@
                 </div>
             </div>
         </nav>
+        <div class="container">
+            <div class="col-sm-4">
+            <form action="/uploadman" method="POST" enctype="multipart/form-data" >
+                <header class="navbar">
+                <input class="btn btn-default btn-file" type="file" name="photo">
+                </header>
+                <input type="submit" value="Upload Image" class="btn btn-primary">
+            </form>
+            </div>
 
-        <!--<div id="map"></div>
-        LOL-->
-        <div>
-        <a href="https://plot.ly/~saumopal1997/8/?share_key=p71mc8aoeEHz81We0EpGyy" target="_blank" title="Titli Hazards" style="display: block; text-align: center;">
-        <img src="https://plot.ly/~saumopal1997/8.png?share_key=p71mc8aoeEHz81We0EpGyy" alt="Titli Hazards" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" />
-        </a>
-        <script data-plotly="saumopal1997:8" sharekey-plotly="p71mc8aoeEHz81We0EpGyy" src="https://plot.ly/embed.js" async>
-        </script>
+            <div class="col-sm-4" >
+            <header class="navbar">
+            <form action="/uploaddrone" method="POST" enctype="multipart/form-data" >
+                <input type="submit" value="Image from Drone" class="btn btn-primary" style="margin-left: 8em;">
+            </form>
+            </header>
+            </div>
+
+            <div class="col-sm-4">
+            <header class="navbar">
+            <form action="/uploadtweet" method="POST" enctype="multipart/form-data" >
+                <input type="submit" value="Image from Twitter" class="btn btn-primary">
+            </form>
+            </header>
+            </div>
+
+            <br /><br /><br /><br /><br /><br />
+            <div class="container">
+            {% if isfile: %}
+            <img src="{{ url_for('static',filename=fname) }}" alt="User Image" height="300em" width="300em">
+            {% for prediction in predictions %}
+            <h3>{{ prediction.tag_name }} : {{ prediction.probability }}</h3>
+            {% endfor %}
+            {% endif %}
+            </div>
         </div>
-
     </div>
 </div>
-
 
 </body>
 
@@ -140,12 +163,6 @@
 	<script src="static/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-	<script src="static/js/demo.js"></script>
-
-    <script>
-        $().ready(function(){
-            demo.initGoogleMaps();
-        });
-    </script>
+	<script src="static/js/demo.js"></script>      
 
 </html>
