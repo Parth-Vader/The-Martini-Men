@@ -68,13 +68,13 @@
             </div>
 
             <ul class="nav">
-                <li class="active">
+                <li >
                     <a href="{{ url_for('dashboard') }}">
                         <i class="pe-7s-graph"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="{{ url_for('maps') }}">
                         <i class="pe-7s-map-marker"></i>
                         <p>Maps</p>
@@ -82,13 +82,13 @@
                 </li>
                 <li>
                     <a href="{{ url_for('upload') }}">
-                        <i class="pe-7s-graph"></i>
+                        <i class="pe-7s-upload"></i>
                         <p>Upload</p>
                     </a>
                 </li>
                 <li>
                     <a href="{{ url_for('chat') }}">
-                        <i class="pe-7s-note2"></i>
+                        <i class="pe-7s-chat"></i>
                         <p>Chat</p>
                     </a>
                 </li>
@@ -97,37 +97,11 @@
     </div>
 
     <div class="main-panel">
-		<nav class="navbar navbar-default navbar-fixed">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <p>
-										Help Numbers
-										<b class="caret"></b>
-									</p>
-
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                              </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!--<div id="map"></div>
-        LOL-->
+            <nav class="navbar navbar-default navbar-fixed">    
+        <h2 style="text-align: center"><strong>NASA Flood Data</strong></h2>
+                </nav>
         <div>
-        <a href="https://plot.ly/~saumopal1997/8/?share_key=p71mc8aoeEHz81We0EpGyy" target="_blank" title="Titli Hazards" style="display: block; text-align: center;">
+        <a href="https://plot.ly/~saumopal1997/8/?share_key=p71mc8aoeEHz81We0EpGyy" target="_blank" title="High alert zones" style="display: block; text-align: center;">
         <img src="https://plot.ly/~saumopal1997/8.png?share_key=p71mc8aoeEHz81We0EpGyy" alt="Titli Hazards" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" />
         </a>
         <script data-plotly="saumopal1997:8" sharekey-plotly="p71mc8aoeEHz81We0EpGyy" src="https://plot.ly/embed.js" async>

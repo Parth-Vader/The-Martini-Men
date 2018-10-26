@@ -31,6 +31,9 @@
     <link href="static/css/pe-icon-7-stroke.css" rel="stylesheet" />
 
     <style>
+        .logo{
+            text-transform: lowercase;
+        }
         .chatbox{
             width:70%;
         }
@@ -75,12 +78,12 @@
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="#" class="simple-text">
-                    RedDash
+                    redDash
                 </a>
             </div>
 
             <ul class="nav">
-                <li class="active">
+                <li>
                     <a href="{{ url_for('dashboard') }}">
                         <i class="pe-7s-graph"></i>
                         <p>Dashboard</p>
@@ -94,13 +97,13 @@
                 </li>
                 <li>
                     <a href="{{ url_for('upload') }}">
-                        <i class="pe-7s-graph"></i>
+                        <i class="pe-7s-upload"></i>
                         <p>Upload</p>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="{{ url_for('chat') }}">
-                        <i class="pe-7s-note2"></i>
+                        <i class="pe-7s-chat"></i>
                         <p>Chat</p>
                     </a>
                 </li>
@@ -109,7 +112,10 @@
     </div>
 
     <div class="main-panel">
-        <h2 style="text-align: center">redType</h2>
+        <nav class="navbar navbar-default navbar-fixed">
+                <h2 style="text-align: center"><strong>redType</strong></h2>
+        </nav>
+        
         
         <div class ="container-fluid chatbox">
         <div class="chat leftt" >
