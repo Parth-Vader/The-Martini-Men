@@ -29,7 +29,24 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="static/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <style>
+    ul.images {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    list-style: none;
+    }
 
+    ul.images li {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    margin: 2em;
+    }
+    </style>
 </head>
 <body>
 
@@ -116,9 +133,15 @@
         <script data-plotly="saumopal1997:8" sharekey-plotly="p71mc8aoeEHz81We0EpGyy" src="https://plot.ly/embed.js" async>
         </script>
         </div>
-
+        <ul class="images">
+                <!-- Inline styles added for demonstration purposes only. -->
+                {% for fname in arr %}
+                <li><img src="{{ url_for('static',filename=fname) }} " height="150em" width="200em"></li>
+                {% endfor %}
+         </ul>
     </div>
 </div>
+
 
 
 </body>
