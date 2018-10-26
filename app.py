@@ -33,13 +33,9 @@ def dashboard():
 @app.route('/maps')
 def maps():
     arr = []
-    # staticpath = os.path.join(APP_ROOT,'/static')
     staticpath = APP_ROOT + "/static"
-    print(staticpath)
     for file in os.listdir(staticpath):
-        print(file)
         if file.endswith(".jpg"):
-            print(file)
             arr.append(file)
 
     return render_template('maps.html',arr=arr)

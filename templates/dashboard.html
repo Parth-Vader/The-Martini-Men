@@ -29,7 +29,24 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="static/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <style>
+    .def{
+        width: 100%;
+        margin: 2em;
+        font-size: 125%;
+    }
+    .left{
+        /* text-align: left; */
+    }
+    .right{
+        /* text-align: right; */
+        /* float: right; */
+    }
+    .container{
+        width: 80%;
 
+    }
+    </style>
 </head>
 <body>
 
@@ -81,18 +98,23 @@
 
     <div class="main-panel">
             <nav class="navbar navbar-default navbar-fixed">
-        <h1 style="text-align: center">redDash</h1>        
+            <h2 style="text-align: center; color: red;"><strong>redDash</strong></h2>
+            <h5 style="text-align: center;"><b>Interactive help dashboard to provide you an overview of
+                    the ongoing disaster situation</b></h5>     
         </nav>
-    <p>
-    During disasters, we mainly have three problems --
-    1) Prediction
-    2) Management
-    3) Assessment
+    <div class="container">
+    
+        <div class="def left">When we are struck by any natural disaster our first impulse is to provide first aid and help of any kind as soon as possible. But, today, with the huge growth in Machine Learning industry and a rich Open Source community we can do a lot more to predict, manage and assess disasters.</div>
 
-    What we do :
-    - redDash interactive dashboard
-    - redType mobile app
-    </p>    
+        <div class="def right"><b>Maps</b>: We put the NASA open source toolkit and dynamically logged csv files, which are updated daily with disaster affected location data, to use by cleaning them and displaying high alert zones on a Map.
+            <br> As of now it takes flood data and generates the map accordingly.</div>
+        
+        <div class="def left"><b>Upload</b>: Check whether a snapshot or an image from social media or a drone is suggestive of an ongoing natural disaster. We use Microsoft Azure Custom Vision API to classify images from different sources. 
+            </div>
+        
+        <div class="def right"><b>Chat</b>: We provide a simple Android app, redType, with basic SMS functionality. During time of distress, it would help send SOS messages to our Helpline number along with the Location of the sender. <br>The Helpline admin can the reply through our interface back to the victim, stating the course of the rescue operation.</div>
+ 
+    </div>
     </div>
 </div>
 

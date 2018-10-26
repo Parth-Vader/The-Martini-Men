@@ -110,13 +110,15 @@
             </header>
             </div>
 
-            <br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br><br>
             <div class="container">
             {% if isfile: %}
-            <img src="{{ url_for('static',filename=fname) }}" alt="User Image" height="300em" width="300em">
-            {% for prediction in predictions %}
-            <h3>{{ prediction.tag_name }} : {{ prediction.probability }}</h3>
+            <img src="{{ url_for('static',filename=fname) }}" alt="User Image" height="300em" width="300em" style="border:5px solid black; border-radius:10px;">
+            <div style="float:right; margin-right:15em;">
+            {% for prediction in predictions: %}
+            <h3>The <b style="color:rgb(221, 63, 63);">danger</b> probability of {{ prediction.tag_name }} : {{ prediction.probability }}.</h3>
             {% endfor %}
+            </div>
             {% endif %}
             </div>
         </div>
