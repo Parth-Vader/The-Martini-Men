@@ -1,5 +1,7 @@
 # Our proposed solution:-
 
+## Website : http://redtype.azurewebsites.net/
+
 ### Prediction: 
 **Monitoring disasters using UAVs :** Drones equipped with camera sensors which produce aerial photos of the affected area could help us recognize unsteady conditions using Deep Learning techniques. Images collected are sent to the server for remote processing. A trained Deep Learning model (VGG architecture) will be deployed on the server which would help in the prediction part.
 
