@@ -41,13 +41,11 @@ With the help of information extracted from NRT Global Flood Mapping we can get 
 1) **Recognizing high importance zones**, i.e. segregating and prioritising disaster affected area to send help in an efficient manner. 
 
     - **How it works** : Provide an offline group messaging platform, along with redType, to the people to communicate with first responders which helps the aiders assess the immediacy of the situation.
+    - **Mesh Network** : To allow messages to be sent directly from device to device, users connect to all nearby devices by creating a localized mesh network which is achieved using the Android Nearby Connections API.
+    - *The frequency of messages,* i.e. the mesh network traffic, received by first responders in nearby zones would in turn give us the estimate of the measure of importance of a particular disaster affected region.
 
     
 ![img1](https://raw.githubusercontent.com/Parth-Vader/The-Martini-Men/master/img1.jpg?token=APhACHwKe1PbR97TDNfcHdENZBMja_Grks5b1xd5wA%3D%3D)
-
-    - **Mesh Network** : To allow messages to be sent directly from device to device, users connect to all nearby devices by creating a localized mesh network which is achieved using the Android Nearby Connections API.
-
-    - *The frequency of messages,* i.e. the mesh network traffic, received by first responders in nearby zones would in turn give us the estimate of the measure of importance of a particular disaster affected region.
 
 
 2) **Aid Transfer Optimization**, i.e. deciding on Aid stations where there’s sufficient help available and from where sending support would be best.
