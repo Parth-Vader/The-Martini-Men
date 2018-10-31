@@ -57,7 +57,6 @@ With the help of information extracted from NRT Global Flood Mapping we can get 
 ![img2](https://raw.githubusercontent.com/Parth-Vader/The-Martini-Men/master/img2.jpg?token=APhACKOS9yZ7sgFhCW2dtz4-KRo_gRd4ks5b1xejwA%3D%3D)
     - Priority will be given to Aid stations which have support available and are closest to the Layer 1 stations and/or affected areas
 
-3) 
-**ETA with the help of redType** : i.e. provide an estimate of when help will reach the victims based on the developed conditions of the surroundings.
+3) **ETA with the help of redType** : i.e. provide an estimate of when help will reach the victims based on the developed conditions of the surroundings.
     - It would take into account the preparation time at each Aid station, mode of transport used and the distance (taking the most preferable route) from the affected area, given the circumstances.
     - The estimate could also help the first responders know how much time they would take to reach the victims and speeden their actions accordingly
