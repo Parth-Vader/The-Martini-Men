@@ -4,7 +4,7 @@
 
 ## Prediction : 
 
-### Monitoring disasters using 
+### Monitoring disasters using ~
 
 **UAVs :** Drones equipped with camera sensors which produce aerial photos of the affected area could help us recognize unsteady conditions using Deep Learning techniques. 
 <br>
