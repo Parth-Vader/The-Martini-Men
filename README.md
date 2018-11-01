@@ -17,8 +17,9 @@ In addition to spotting people in need of help, drones will be able to predict f
 Images collected are sent to the server for remote processing. 
 Here, we use the **Microsoft Azure Custom Vision API** to analyse the images and predict the probability of the same coming from an area which has been hit by a natural disaster recently. As of now our model is only trained on flood labeled images but it can be extended to situations depicting wildfire, earthquakes and landslides.
 <br><br>
+<p align="center">
 ![img3](https://raw.githubusercontent.com/anshu1997/The-Martini-Men/master/img3.jpg?token=APhACHwKe1PbR97TDNfcHdENZBMja_Grks5b1xd5wA%3D%3D)
-
+</p>
 
 ### Forecast from Global NASA data :
 With the help of information extracted from NRT Global Flood Mapping we can get the approximate latitude and longitude measurements of areas which have imminent danger due to flood. The high-risk flood zones from NASA satellites which are updated every 24 hrs, are displayed on the redDash map. 
@@ -28,9 +29,9 @@ With the help of information extracted from NRT Global Flood Mapping we can get 
 **redType :** We provide a simple chat system for the victim as well as the rescuer so that they can effectively communicate with each other, even without internet connectivity. *redType* is an Android app with basic SMS functionality brought to life through the **Twilio API**. 
 <br>During time of emergency, it would help victims send SOS messages to our Helpline number along with the Location of the sender. The Helpline admin can then reply through our interface back to the victim, stating the course of the rescue operation.
 
-
+<p align="center">
 ![img4](https://raw.githubusercontent.com/anshu1997/The-Martini-Men/master/img4.jpg?token=APhACHwKe1PbR97TDNfcHdENZBMja_Grks5b1xd5wA%3D%3D)
-
+</p>
 
 <hr />
 
