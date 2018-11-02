@@ -12,7 +12,8 @@
 <br>
 In addition to spotting people in need of help, drones will be able to predict further flooding, and help provide estimates of how long certain areas would be underwater.
 <br><br>
-**Images from Social Media :** As our lives get immensely integrated with social media in general, a lot of information about any on going situation can be derived from it. 
+**Images from Social Media :** As our lives get immensely integrated with social media in general, a lot of information about any ongoing situation can be derived from it. So by collecting all these information from social media, we can derive real time prediction regarding oncoming natural disasters accurately. For this project, we have a twitter bot which scrapes the images from social media with tags related to natural disasters real time and sends it to our image analyser described below, which finally maps the image to a degree of severity and correspondingly adds the affected area in the map. 
+
 <br><br>
 Images collected are sent to the server for remote processing. 
 Here, we use the **Microsoft Azure Custom Vision API** to analyse the images and predict the probability of the same coming from an area which has been hit by a natural disaster recently. As of now our model is only trained on flood labeled images but it can be extended to situations depicting wildfire, earthquakes and landslides.
@@ -22,7 +23,7 @@ Here, we use the **Microsoft Azure Custom Vision API** to analyse the images and
     
 
 ### Forecast from Global NASA data :
-With the help of information extracted from NRT Global Flood Mapping we can get the approximate latitude and longitude measurements of areas which have imminent danger due to flood. The high-risk flood zones from NASA satellites which are updated every 24 hrs, are displayed on the redDash map. 
+With the help of information extracted from NRT Global Flood Mapping we can get the approximate latitude and longitude measurements of areas which have imminent danger due to flood. The high-risk flood zones from NASA satellites which are updated every 24 hrs, are displayed on the redDash map. Also using a simple linear Regression module trained on the data using Azure Machine Learning Studio, we can provide accurate future prediction. Thus combining this method with the image predictions from above, we can give state-of-the-art predictions on our dashboard.
 
 
 ## Post Prediction : 
