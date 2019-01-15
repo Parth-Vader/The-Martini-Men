@@ -13,8 +13,7 @@
 In addition to spotting people in need of help, drones will be able to predict further flooding, and help provide estimates of how long certain areas would be underwater.
 <br><br>
 **Images from Social Media :** As our lives get immensely integrated with social media in general, a lot of information about any ongoing situation can be derived from it. So by collecting all these information from social media, we can derive real time prediction regarding oncoming natural disasters accurately. For this project, we have a twitter bot which scrapes the images from social media with tags related to natural disasters real time and sends it to our image analyser described below, which finally maps the image to a degree of severity and correspondingly adds the affected area in the map. 
-
-<br><br>
+<br>
 Images collected are sent to the server for remote processing. 
 Here, we use the **Microsoft Azure Custom Vision API** to analyse the images and predict the probability of the same coming from an area which has been hit by a natural disaster recently. As of now our model is only trained on flood labeled images but it can be extended to situations depicting wildfire, earthquakes and landslides.
 <br><br>
