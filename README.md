@@ -31,7 +31,7 @@ With the help of information extracted from NRT Global Flood Mapping we can get 
 **redType :** We provide a simple chat system for the victim as well as the rescuer so that they can effectively communicate with each other, even without internet connectivity. *redType* is an Android app with basic SMS functionality brought to life through the **Twilio API**. 
 <br>During time of emergency, it would help victims send SOS messages to our Helpline number along with the Location of the sender. The Helpline admin can then reply through our interface back to the victim, stating the course of the rescue operation.
 
-![img4](https://raw.githubusercontent.com/anshu1997/The-Martini-Men/master/img4.jpg?token=APhACHwKe1PbR97TDNfcHdENZBMja_Grks5b1xd5wA%3D%3D)
+![img4](https://github.com/Parth-Vader/The-Martini-Men/blob/master/img4.jpg)
 
 <hr />
 
@@ -46,14 +46,14 @@ With the help of information extracted from NRT Global Flood Mapping we can get 
     - *The frequency of messages,* i.e. the mesh network traffic, received by first responders in nearby zones would in turn give us the estimate of the measure of importance of a particular disaster affected region.
 
     
-![img1](https://raw.githubusercontent.com/Parth-Vader/The-Martini-Men/master/img1.jpg?token=APhACHwKe1PbR97TDNfcHdENZBMja_Grks5b1xd5wA%3D%3D)
+![img1](https://github.com/Parth-Vader/The-Martini-Men/blob/master/img1.jpg)
 
 
 2) **Aid Transfer Optimization**, i.e. deciding on Aid stations where there’s sufficient help available and from where sending support would be best.
 
     - **How it works** : Given a network of Aid stations, we keep a track of the quantity of emergency supplies available, focussing mainly on those which are closest to high importance zones(say layer 1). Next, we identify Aid stations closest to the layer 1 stations(say layer 2) and steer all their aids towards the nearest (optimal) layer 1 stations.
     
-![img2](https://raw.githubusercontent.com/Parth-Vader/The-Martini-Men/master/img2.jpg?token=APhACKOS9yZ7sgFhCW2dtz4-KRo_gRd4ks5b1xejwA%3D%3D)
+![img2](https://github.com/Parth-Vader/The-Martini-Men/blob/master/img2.jpg)
     - Priority will be given to Aid stations which have support available and are closest to the Layer 1 stations and/or affected areas
 
 3) **ETA with the help of redType** : i.e. provide an estimate of when help will reach the victims based on the developed conditions of the surroundings.
