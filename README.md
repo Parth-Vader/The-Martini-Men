@@ -19,7 +19,8 @@ Images collected are sent to the server for remote processing.
 Here, we use the **Microsoft Azure Custom Vision API** to analyse the images and predict the probability of the same coming from an area which has been hit by a natural disaster recently. As of now our model is only trained on flood labeled images but it can be extended to situations depicting wildfire, earthquakes and landslides.
 <br><br>
 
-![img3](https://raw.githubusercontent.com/anshu1997/The-Martini-Men/master/img3.jpg?token=APhACHwKe1PbR97TDNfcHdENZBMja_Grks5b1xd5wA%3D%3D)
+![img3](https://github.com/Parth-Vader/The-Martini-Men/blob/master/img3.jpg)
+
     
 
 ### Forecast from Global NASA data :
